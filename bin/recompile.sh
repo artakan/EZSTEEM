@@ -54,7 +54,7 @@ git fetch
 git checkout v0.13.0
 rm -f CMakeCache.txt
 make -s clean > /dev/null
-cmake -DCMAKE_BUILD_TYPE=Release -DLOW_MEMORY_NODE=ON .
+cmake -DCMAKE_BUILD_TYPE=Release -DLOW_MEMORY_NODE=OFF .
 make --silent 
 
 clear
