@@ -52,6 +52,7 @@ mkdir -p "$myBaseDir"
 cd "$myBaseDir/steem"
 git fetch
 git checkout v0.13.0
+sudo -s git submodule update --recursive
 rm -f CMakeCache.txt
 make -s clean > /dev/null
 cmake -DCMAKE_BUILD_TYPE=Release -DLOW_MEMORY_NODE=ON .
